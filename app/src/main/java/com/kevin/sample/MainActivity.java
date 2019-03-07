@@ -14,10 +14,13 @@ import com.kevin.klhttp.net.RestClient;
 import com.kevin.klhttp.net.callback.IFailure;
 import com.kevin.klhttp.net.callback.ISuccess;
 import com.kevin.klhttp.net.exception.RestException;
+import com.kevin.klhttp.ui.LoaderStyle;
 import com.kevin.sample.bean.Douban;
 import com.kevin.sample.bean.DoubanResponse;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author kevinliu
@@ -49,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
         RxBus.getInstance().register(this);
 
+
+
     }
 
 
@@ -75,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void getDoubanMovies(){
+
+
         //请求豆瓣电影列表
         RestClient.builder()
                 .url("/v2/movie/top250")
