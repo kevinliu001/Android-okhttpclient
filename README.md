@@ -9,6 +9,7 @@
 欢迎大家讨论指正
 
 使用方法：
+
 一、初始化，可在Application onCreate中初始化
 
 1、基础:
