@@ -11,7 +11,8 @@
 使用方法：
 一、初始化，可在Application onCreate中初始化
 
-1、基础
+1、基础:
+
 RestClientConfigurator.getInstance()
                 .with(this)
                 .withApiHost("http://api.douban.com")
@@ -53,8 +54,8 @@ RestClientConfigurator.getInstance()
         .withTimeOut(60)
         .configure();
         
-二、请求（拿豆瓣openApi举例）
-        
+二、请求（拿豆瓣openApi举例）:
+
 //请求豆瓣电影列表
 RestClient.builder()
         .url("/v2/movie/top250")
