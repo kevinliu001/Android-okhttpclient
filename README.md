@@ -13,11 +13,13 @@
 
 1、基础:
 
+···
 RestClientConfigurator.getInstance()
                 .with(this)
                 .withApiHost("http://api.douban.com")
                 .configure();
-                
+···
+
 2、高级
 
 RestClientConfigurator.getInstance()
