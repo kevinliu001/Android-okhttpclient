@@ -97,7 +97,7 @@
         .build()
         .request();
  
-3、注册RegisterBug，当返回成功时可以将返回结果回调到任何页面，使用方法如下：
+3、注册RegisterBus，当返回成功时可以将返回结果回调到任何页面，使用方法如下：
     
     比如在Activity的onCreate中注册
     RxBus.getInstance().register(this);
