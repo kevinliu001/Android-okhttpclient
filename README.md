@@ -68,9 +68,9 @@
         .loader(this)
         //请求方法
         .method(KLHttpMethod.GET)
-        //请求返回实体类型，不传默认返回string类型
+        //请求返回实体类型，不设置默认返回string类型
         .entityType(DoubanResponse.class)
-        //是否显示错误提示Toast，默认显示例
+        //是否显示错误提示Toast，默认显示
         .showErrorToast(true)
         //请求成功回调
         .success(new ISuccess<DoubanResponse>() {
