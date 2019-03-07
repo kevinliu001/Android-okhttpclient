@@ -13,16 +13,14 @@
 
 1、基础:
 
-···
-RestClientConfigurator.getInstance()
+    RestClientConfigurator.getInstance()
                 .with(this)
                 .withApiHost("http://api.douban.com")
                 .configure();
-···
 
 2、高级
 
-RestClientConfigurator.getInstance()
+    RestClientConfigurator.getInstance()
         .with(this)
         .withApiHost("http://api.douban.com")
         .withInterceptor(new Interceptor() {
@@ -58,8 +56,8 @@ RestClientConfigurator.getInstance()
         
 二、请求（拿豆瓣openApi举例）:
 
-//请求豆瓣电影列表
-RestClient.builder()
+      //请求豆瓣电影列表
+      RestClient.builder()
         .url("/v2/movie/top250")
         //提交参数，也可以用.params(map)方式提交
         .param("start", "0")
