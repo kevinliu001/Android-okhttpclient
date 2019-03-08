@@ -103,7 +103,7 @@
     RxBus.getInstance().register(this);
     
     在onDestroy中取消注册
-    RxBus.getInstance().unRregister(this);
+    RxBus.getInstance().unRegister(this);
     
     在当前页面写一个注解方法
     @RegisterBus
