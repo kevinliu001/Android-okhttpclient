@@ -9,7 +9,7 @@ import com.kevin.klhttp.net.callback.ISuccess;
 import com.kevin.klhttp.net.config.ClientConfigKeys;
 import com.kevin.klhttp.net.config.RestClientConfigurator;
 import com.kevin.klhttp.net.exception.RestException;
-import com.kevin.klhttp.ui.KlLoader;
+import com.kevin.klhttp.ui.KLLoader;
 import com.kevin.klhttp.ui.LoaderStyle;
 import com.kevin.klhttp.utils.GsonUtil;
 import com.kevin.klhttp.utils.ToastUtil;
@@ -121,7 +121,7 @@ public class RestObserver implements Observer<String> {
 
     private void stopLoading() {
         if (mLoaderStyle != null) {
-            KlLoader.stopLoading();
+            KLLoader.stopLoading();
         }
     }
 

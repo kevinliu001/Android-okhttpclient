@@ -6,7 +6,7 @@ import android.content.Context;
 import com.kevin.klhttp.net.callback.IFailure;
 import com.kevin.klhttp.net.callback.ISuccess;
 import com.kevin.klhttp.net.response.RestObserver;
-import com.kevin.klhttp.ui.KlLoader;
+import com.kevin.klhttp.ui.KLLoader;
 import com.kevin.klhttp.ui.LoaderStyle;
 
 import java.io.File;
@@ -64,7 +64,7 @@ public class RestClient {
         Observable<String> observable = null;
 
         if (LOADER_STYPE != null) {
-            KlLoader.showLoading(CONTEXT, LOADER_STYPE);
+            KLLoader.showLoading(CONTEXT, LOADER_STYPE);
         }
         switch (method) {
             case GET:

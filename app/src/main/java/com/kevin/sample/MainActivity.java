@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 .url("/v2/movie/top250")
                 .param("start", "0")
                 .param("count", "20")
-                .loader(this)
+                .loader(this,LoaderStyle.LineScaleIndicator)
                 .method(KLHttpMethod.GET)
                 .entityType(DoubanResponse.class)
                 .showErrorToast(true)
